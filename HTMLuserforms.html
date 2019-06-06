@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTMLForms</title>
+</head>
+<body>
+<h1> text boxes and buttons that let you create a Person object with data from the textboxes, output your Person object, as well as edit your Person object.</h1>
+
+<input type="text" id="myText" placeholder="FirstName...">
+<input type="text1" id="myText1" placeholder="LastName...">
+<input type="text2" id="myText2" placeholder="Age...">
+<input type="text3" id="myText3" placeholder="Country...">
+<input type="text4" id="myText4" placeholder="Gender...">
+
+
+<p>Click the "Try it" button to get the text in the text field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+function myFunction() {
+	var x = document.getElementById("myText").value;
+	var a = document.getElementById("myText1").value;
+	var b = document.getElementById("myText2").value;
+	var c = document.getElementById("myText3").value;
+	var d = document.getElementById("myText4").value;
+  	document.getElementById("demo").innerHTML = x;
+	document.getElementById("demo1").innerHTML = a;
+	document.getElementById("demo2").innerHTML = b;
+	document.getElementById("demo3").innerHTML = c;
+	document.getElementById("demo4").innerHTML = d;
+}
+</script>
+
+
+<p id="demo"></p>
+
+<script>
+var personT = "“ He said “My name is Elliott” ”";
+document.getElementById("demo").innerHTML = personT ;
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
