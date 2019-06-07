@@ -4,7 +4,7 @@
 <title>HTMLForms</title>
 </head>
 <body>
-<h1> text boxes and buttons that let you create a Person object with data from the textboxes, output your Person object, as well as edit your Person object.</h1>
+<h1> Text boxes and buttons that let you create a Person object with data from the textboxes, output your Person object, as well as edit your Person object. </h1>
 
 <input type="text" id="myText" placeholder="FirstName...">
 <input type="text1" id="myText1" placeholder="LastName...">
@@ -39,12 +39,58 @@ function myFunction() {
 </script>
 
 
+
+
+
+
+
+
+---------------------------------------------------------------------
+
+<h3> create a variable called person with a value and display it...Displayed above.</h3>
+
+
+
 <p id="demo"></p>
 
 <script>
-var personT = "“ He said “My name is Elliott” ”";
-document.getElementById("demo").innerHTML = personT ;
+var person = " He said “My name is Elliott” ";
+document.getElementById("demo").innerHTML = person;
 </script>
+
+-----------------------------------------------------------------------
+<h2> Using String Methods, convert this string to uppercase, and display it.</h2>
+<p> on click convert this string into uppercase.</p>
+
+<button onclick="convertUp()">Try it</button>
+
+
+<p id="demo">"He said "My name is Elliott"</p>
+
+<script>
+function convertUp() {
+  var text = document.getElementById("demo").innerHTML;
+  document.getElementById("demo").innerHTML = text.toUpperCase();
+}
+</script>
+
+<p>Click the button to join a string and a number into one</p>
+
+<button onclick="myFusion()">Press Me!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFusion() {
+  var str1 = "Knightz";
+  var num = 9500;
+  var res = str1.concat(num);
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+
+
+
 
 
 
